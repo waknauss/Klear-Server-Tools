@@ -89,6 +89,7 @@ class GenerateApacheVhost extends Command {
         }
 
         foreach ($commands as $command) {
+            $command = str_replace('{USERNAME}',$username,$command);
             $process = Process::fromShellCommandline($command);
             $process->run();
 
