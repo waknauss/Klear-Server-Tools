@@ -90,6 +90,8 @@ class CreateUser extends Command {
         $command = str_replace('{PASSWORD}',$password,$command);
         $command = str_replace('{USERNAME}',$username,$command);
         $command = str_replace('{n}','\n',$command);
+        $this->info($command);
+        $this->newLine(3);
 
         $output = shell_exec($command);
         $this->comment($output);
