@@ -253,6 +253,7 @@ class ComposerStaticInite1637ab6dec32b4d2affb62b9e48fac4
         'FightTheIce\\Console\\TextParser' => __DIR__ . '/..' . '/fighttheice/console/src/TextParser.php',
         'JsonException' => __DIR__ . '/..' . '/symfony/polyfill-php73/Resources/stubs/JsonException.php',
         'Klear\\Commands\\Hello\\World' => __DIR__ . '/../..' . '/src/commands/Hello/World.php',
+        'Klear\\Libraries\\Console' => __DIR__ . '/../..' . '/src/libraries/Console.php',
         'Normalizer' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/Resources/stubs/Normalizer.php',
         'Stringable' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Stringable.php',
         'UnhandledMatchError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/UnhandledMatchError.php',
