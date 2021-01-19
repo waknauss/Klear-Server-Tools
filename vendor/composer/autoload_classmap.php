@@ -50,6 +50,7 @@ return array(
     'JsonException' => $vendorDir . '/symfony/polyfill-php73/Resources/stubs/JsonException.php',
     'Klear\\Commands\\Hello\\World' => $baseDir . '/src/commands/Hello/World.php',
     'Klear\\Commands\\Webserver\\CreateUser' => $baseDir . '/src/commands/Webserver/CreateUser.php',
+    'Klear\\Commands\\Webserver\\GenerateSSL' => $baseDir . '/src/commands/Webserver/GenerateSSL.php',
     'Klear\\Libraries\\Console' => $baseDir . '/src/libraries/Console.php',
     'Normalizer' => $vendorDir . '/symfony/polyfill-intl-normalizer/Resources/stubs/Normalizer.php',
     'Stringable' => $vendorDir . '/symfony/polyfill-php80/Resources/stubs/Stringable.php',
