@@ -105,6 +105,7 @@ class CreateUser extends Command {
 
         $this->comment('User: ['.$username.'] has a password of: ['.$password.']');
 
+        $this->call('webserver:generatessl',array('username' => $username));
         $this->call('webserver:generateapachevhost',array('username' => $username));
         $this->call('webserver:generatephpfpmconfig',array('username' => $username));
 	}
