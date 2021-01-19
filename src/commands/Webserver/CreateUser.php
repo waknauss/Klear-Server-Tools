@@ -89,7 +89,7 @@ class CreateUser extends Command {
         $command = $config->get('commands.system.change-user-password');
         $command = str_replace('{PASSWORD}',$password,$command);
         $command = str_replace('{USERNAME}',$username,$command);
-        $command = str_replace('{\n}','\n',$command);
+        $command = str_replace('{n}','\n',$command);
 
         $process = Process::fromShellCommandline($command);
         $process->run();
