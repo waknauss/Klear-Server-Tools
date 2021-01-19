@@ -3,7 +3,7 @@
         "system": {
             "create-user": "useradd -m {USERNAME}",
             "generate-ssl": "openssl req -new -newkey rsa:4096 -days 365 -nodes -x509 -subj \"/C=US/ST=Denial/L=Mansfield/O=Klear Digital/CN={USERNAME}\" -keyout /home/{USERNAME}/ssl/{USERNAME}.key -out /home/{USERNAME}/ssl/{USERNAME}.crt",
-            "change-user-password": "echo -e \"{PASSWORD}\n{PASSWORD}\" | passwd {USERNAME}"
+            "change-user-password": "echo -e \"{PASSWORD}{\n}{PASSWORD}\" | passwd {USERNAME}"
         }
     }
 }
