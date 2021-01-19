@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => '5c8fbd69a8897acdda42c6ebc35f6a5a4f4c644f',
+    'reference' => '2bcdc7b28fba77aacd7d37735bf299292d0f46c0',
     'name' => 'kleardigital/server-tools',
   ),
   'versions' => 
@@ -28,6 +28,15 @@
       array (
       ),
       'reference' => '16640b5d9ec850e40fb6a9d7f97bcdee832d1da0',
+    ),
+    'illuminate/config' => 
+    array (
+      'pretty_version' => 'v7.30.3',
+      'version' => '7.30.3.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '9d908793eceb04a8c8f74cfc6af3429ce140d2e2',
     ),
     'illuminate/console' => 
     array (
@@ -81,7 +90,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '5c8fbd69a8897acdda42c6ebc35f6a5a4f4c644f',
+      'reference' => '2bcdc7b28fba77aacd7d37735bf299292d0f46c0',
     ),
     'nesbot/carbon' => 
     array (

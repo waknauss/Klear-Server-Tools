@@ -5,7 +5,8 @@
         "fighttheice/console": "^1.0",
         "parsecsv/php-parsecsv": "^1.2",
         "symfony/finder": "^5.2",
-        "symfony/process": "^5.2"
+        "symfony/process": "^5.2",
+        "illuminate/config": "^7.4"
     },
     "license": "proprietary",
     "authors": [
