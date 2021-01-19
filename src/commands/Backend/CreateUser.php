@@ -40,7 +40,7 @@ class CreateUser extends Command {
         $process->run();
 
         if (!$process->isSuccessful()) {
-            $exception = ProcessFailedException($process);
+            $exception = new ProcessFailedException($process);
             $this->error($exception->getMessage());
             return -2;
         }
