@@ -5,6 +5,7 @@ namespace Klear\Commands\Webserver;
 use FightTheIce\Console\Command;
 use Symfony\Component\Process\Exception\ProcessFailedException;
 use Symfony\Component\Process\Process;
+use FightTheIce\Domain\Parser as DomainParser;
 
 class CreateUser extends Command {
 	protected $signature = 'webserver:createuser {username? : System Username}';
@@ -32,6 +33,22 @@ class CreateUser extends Command {
             return -1;
         }
 
+        $parser = new DomainParser();
+        try {
+            $parser->parse($url);	
+        } catch (Exception $e) {
+            throw $e;
+        }
+
+        $subdomain = $parser->getSubdomain();
+        $domain = $parser->getDomain();
+        $gld = $parser->getGld();
+        if (empty($subdomain)) {
+            $subdomain = 'www';
+        }
+
+        $username = $subdomain.'.'.$domain.'.'.$gld;
+        $this->comment($username);
 
         //get the config
         $config = $this->getContainer()->make('config');
