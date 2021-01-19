@@ -9,7 +9,7 @@ use Symfony\Component\Process\Process;
 class CreateUser extends Command {
 	protected $signature = 'backend:createuser {username? : System Username}';
 	protected $description = 'Create a backend user';
-	protected $hidden = true;
+	protected $hidden = false;
 	protected $enabled = true;
 
 	public function handle() {
@@ -36,7 +36,7 @@ class CreateUser extends Command {
 
         $command = str_replace('{USERNAME}',$username,$command);
         
-        $process = new Process($command);
+        $process = new Process([$command]);
         $process->run();
 
         if (!$process->isSuccessful()) {
