@@ -9,7 +9,7 @@ use FightTheIce\Domain\Parser as DomainParser;
 use Illuminate\Support\Str;
 
 class GeneratePHPFPMConfig extends Command {
-	protected $signature = 'webserver:generatephpfpmconfig{username? : System Username}';
+	protected $signature = 'webserver:generatephpfpmconfig {username? : System Username}';
 	protected $description = 'Generate PHP-FPM Vhost file';
 	protected $hidden = false;
     protected $enabled = true;
