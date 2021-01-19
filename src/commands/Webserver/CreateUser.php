@@ -35,7 +35,7 @@ class CreateUser extends Command {
 
         $parser = new DomainParser();
         try {
-            $parser->parse($url);	
+            $parser->parse($username);	
         } catch (Exception $e) {
             throw $e;
         }
