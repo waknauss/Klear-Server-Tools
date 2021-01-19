@@ -6,6 +6,7 @@ use FightTheIce\Console\Command;
 use Symfony\Component\Process\Exception\ProcessFailedException;
 use Symfony\Component\Process\Process;
 use FightTheIce\Domain\Parser as DomainParser;
+use Illuminate\Support\Str;
 
 class CreateUser extends Command {
 	protected $signature = 'webserver:createuser {username? : System Username}';
@@ -50,6 +51,8 @@ class CreateUser extends Command {
         $username = $subdomain.'.'.$domain.'.'.$gld;
         $this->comment($username);
 
+        $password = Str::random(16);
+
         //get the config
         $config = $this->getContainer()->make('config');
         
@@ -81,5 +84,21 @@ class CreateUser extends Command {
         ) as $folder) {
             mkdir('/home/'.$username.'/'.$folder);
         }
+
+        //get the change password command
+        $command = $config->get('commands.system.change-user-password');
+        $command = str_replace('{PASSWORD}',$password,$command);
+        $command = str_replace('{USERNAME}',$username,$command);
+
+        $process = Process::fromShellCommandline($command);
+        $process->run();
+
+        if (!$process->isSuccessful()) {
+            $exception = new ProcessFailedException($process);
+            $this->error($exception->getMessage());
+            return -2;
+        }
+        
+        $this->comment($process->getOutput());
 	}
 }
