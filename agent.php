@@ -12,6 +12,14 @@ if (!file_exists('config.json')) {
     die('config.json missing!');
 }
 
+if (!file_exists('system.json')) {
+    die('system.json missing!');
+}
+$system = json_decode(file_get_contents('system.json'),true);
+if (!in_array($system['type'],array('development','frontend','webserver','sql'))) {
+    die('Defined system type invalid!');
+}
+
 $console = new FightTheIce\Console\Application('Klear Server Tools','1.0');
 
 //get the container
