@@ -52,6 +52,6 @@ new Klear\Libraries\Console($console);
 
 $console->resolve('Klear\Commands\Hello\World');
 
-$console->resolve('Klear\Commands\Backend\CreateUser');
+$console->resolve('Klear\Commands\Webserver\CreateUser');
 
 $console->run();

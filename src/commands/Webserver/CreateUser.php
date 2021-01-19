@@ -1,14 +1,14 @@
 <?php
 
-namespace Klear\Commands\Backend;
+namespace Klear\Commands\Webserver;
 
 use FightTheIce\Console\Command;
 use Symfony\Component\Process\Exception\ProcessFailedException;
 use Symfony\Component\Process\Process;
 
 class CreateUser extends Command {
-	protected $signature = 'backend:createuser {username? : System Username}';
-	protected $description = 'Create a backend user';
+	protected $signature = 'webserver:createuser {username? : System Username}';
+	protected $description = 'Create a webserver user';
 	protected $hidden = false;
     protected $enabled = true;
     
