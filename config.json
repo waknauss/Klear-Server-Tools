@@ -4,6 +4,17 @@
             "create-user": "useradd -m {USERNAME}",
             "generate-ssl": "openssl req -new -newkey rsa:4096 -days 365 -nodes -x509 -subj \"/C=US/ST=Denial/L=Mansfield/O=Klear Digital/CN={USERNAME}\" -keyout /home/{USERNAME}/ssl/{USERNAME}.key -out /home/{USERNAME}/ssl/{USERNAME}.crt",
             "change-user-password": "echo '{USERNAME}:{PASSWORD}' | chpasswd"
+        },
+        "services": {
+            "apache2": {
+                "stop": "service apache2 stop",
+                "start": "service apache2 start",
+                "enable-vhost": "a2ensite {USERNAME}"
+            },
+            "php-fpm": {
+                "stop": "service php7.3-fpm stop",
+                "start": "service php7.3-fpm start"
+            }
         }
     }
 }

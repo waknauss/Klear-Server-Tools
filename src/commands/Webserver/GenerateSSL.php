@@ -77,6 +77,8 @@ class GenerateSSL extends Command {
             return -2;
         }
         
-        $this->comment($process->getOutput());
+        //$this->comment($process->getOutput());
+
+        $this->comment('Generated SSL cert for: ['.$username.']');
 	}
 }

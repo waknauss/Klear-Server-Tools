@@ -75,7 +75,7 @@ class CreateUser extends Command {
             return -2;
         }
         
-        $this->comment($process->getOutput());
+        //$this->comment($process->getOutput());
 
         foreach (array(
             'public',
@@ -101,8 +101,11 @@ class CreateUser extends Command {
             return -2;
         }
         
-        $this->comment($process->getOutput());
+        //$this->comment($process->getOutput());
 
         $this->comment('User: ['.$username.'] has a password of: ['.$password.']');
+
+        $this->call('webserver:generateapachevhost',array('username' => $username));
+        $this->call('webserver:generatephpfpmconfig',array('username' => $username));
 	}
 }

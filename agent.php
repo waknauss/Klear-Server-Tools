@@ -54,5 +54,7 @@ $console->resolve('Klear\Commands\Hello\World');
 
 $console->resolve('Klear\Commands\Webserver\CreateUser');
 $console->resolve('Klear\Commands\Webserver\GenerateSSL');
+$console->resolve('Klear\Commands\Webserver\GenerateApacheVhost');
+$console->resolve('Klear\Commands\Webserver\GenerateApachePHPFPMConfig');
 
 $console->run();

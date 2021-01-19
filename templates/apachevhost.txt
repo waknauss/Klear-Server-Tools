@@ -1,0 +1,71 @@
+<VirtualHost *:80>
+    ServerName {USERNAME}
+    ServerAdmin administrator@{USERNAME}
+
+    DocumentRoot "/home/{USERNAME}/public_html"
+
+    <Directory "/home/{USERNAME}/public_html">
+        AllowOverride All
+
+        Require ip 10.136.187.241
+        Require ip 10.128.6.35
+        Require ip 162.243.8.135
+        Require ip 159.203.180.119
+        Require ip 134.209.131.203
+
+        Require all denied
+    </Directory>
+
+    <FilesMatch \.php$>
+        # PHP 7.3
+        SetHandler "proxy:unix:/run/php/php7.3-fpm-{USERNAME}.sock|fcgi://localhost/"
+    </FilesMatch>
+
+    #ErrorLog /home/{USERNAME}/logs/{USERNAME}-error.log
+
+    # Possible values include: debug, info, notice, warn, error, crit,
+    # alert, emerg.
+    #LogLevel warn
+
+    #CustomLog /home/{USERNAME}/logs/{USERNAME}-access.log combined
+</VirtualHost>
+
+<VirtualHost *:443>
+    ServerName www.{USERNAME}
+    ServerAlias {USERNAME}
+    ServerAdmin administrator@{USERNAME}
+
+    DocumentRoot "/home/{USERNAME}/public_html"
+
+    <Directory "/home/{USERNAME}/public_html">
+        AllowOverride All
+
+        Require ip 10.136.187.241
+        Require ip 10.128.6.35
+        Require ip 162.243.8.135
+        Require ip 159.203.180.119
+        Require ip 134.209.131.203
+
+        Require all denied
+    </Directory>
+
+    <FilesMatch \.php$>
+        # PHP 7.3
+        SetHandler "proxy:unix:/run/php/php7.3-fpm-{USERNAME}.sock|fcgi://localhost/"
+    </FilesMatch>
+
+    #ErrorLog /home/{USERNAME}/logs/{USERNAME}-error.log
+
+    # Possible values include: debug, info, notice, warn, error, crit,
+    # alert, emerg.
+    #LogLevel warn
+
+    #CustomLog /home/{USERNAME}/logs/{USERNAME}-access.log combined
+
+    #   SSL Engine Switch:
+    #   Enable/Disable SSL for this virtual host.
+    SSLEngine on
+
+    SSLCertificateFile "/home/{USERNAME}/ssl/{USERNAME}.crt"
+    SSLCertificateKeyFile "/home/{USERNAME}/ssl/{USERNAME}.key"
+</VirtualHost>

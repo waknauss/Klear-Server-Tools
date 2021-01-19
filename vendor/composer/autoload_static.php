@@ -319,6 +319,8 @@ class ComposerStaticInite1637ab6dec32b4d2affb62b9e48fac4
         'JsonException' => __DIR__ . '/..' . '/symfony/polyfill-php73/Resources/stubs/JsonException.php',
         'Klear\\Commands\\Hello\\World' => __DIR__ . '/../..' . '/src/commands/Hello/World.php',
         'Klear\\Commands\\Webserver\\CreateUser' => __DIR__ . '/../..' . '/src/commands/Webserver/CreateUser.php',
+        'Klear\\Commands\\Webserver\\GenerateApacheVhost' => __DIR__ . '/../..' . '/src/commands/Webserver/GenerateApacheVhost.php',
+        'Klear\\Commands\\Webserver\\GeneratePHPFPMConfig' => __DIR__ . '/../..' . '/src/commands/Webserver/GeneratePHPFPMConfig.php',
         'Klear\\Commands\\Webserver\\GenerateSSL' => __DIR__ . '/../..' . '/src/commands/Webserver/GenerateSSL.php',
         'Klear\\Libraries\\Console' => __DIR__ . '/../..' . '/src/libraries/Console.php',
         'Normalizer' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/Resources/stubs/Normalizer.php',
