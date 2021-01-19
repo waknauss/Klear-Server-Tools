@@ -78,7 +78,7 @@ class CreateUser extends Command {
         //$this->comment($process->getOutput());
 
         foreach (array(
-            'public',
+            'public_html',
             'tmp',
             'logs',
             'ssl'
