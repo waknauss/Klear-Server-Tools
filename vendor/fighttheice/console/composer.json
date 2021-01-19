@@ -1,0 +1,24 @@
+{
+    "name": "fighttheice/console",
+    "description": "PHP Console Framework that fires lots of events",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "William Knauss",
+            "email": "william.knauss@kingdom.com"
+        }
+    ],
+    "autoload": {
+        "classmap": ["src"]
+    },
+    "require": {
+        "webmozart/assert": "^1.6",
+        "ramsey/uuid": "^3.9",
+        "illuminate/container": "^7.14",
+        "illuminate/events": "^7.14",
+        "illuminate/console": "^7.14",
+        "symfony/lock": "^5.1",
+        "symfony/event-dispatcher": "^5.1"
+    }
+}

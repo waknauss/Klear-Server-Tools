@@ -1,0 +1,17 @@
+{
+    "name": "kleardigital/server-tools",
+    "description": "Klear Digital Server Tools",
+    "require": {
+        "fighttheice/console": "^1.0",
+        "parsecsv/php-parsecsv": "^1.2",
+        "symfony/finder": "^5.2",
+        "symfony/process": "^5.2"
+    },
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "William Knauss",
+            "email": "william.knauss@kingdom.com"
+        }
+    ]
+}
