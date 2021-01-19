@@ -17,7 +17,12 @@ class ComposerStaticInite1637ab6dec32b4d2affb62b9e48fac4
         'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
         'a1105708a18b76903365ca1c4aa61b02' => __DIR__ . '/..' . '/symfony/translation/Resources/functions.php',
         '72579e7bd17821bb1321b87411366eae' => __DIR__ . '/..' . '/illuminate/support/helpers.php',
+        '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
+        'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
+        'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
+        '98ac7ebbcd4b271b4f101d3af2543920' => __DIR__ . '/..' . '/layershifter/tld-extract/src/static.php',
         'e39a8b23c42d4e1452234d762b03835a' => __DIR__ . '/..' . '/ramsey/uuid/src/functions.php',
+        '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -28,6 +33,10 @@ class ComposerStaticInite1637ab6dec32b4d2affb62b9e48fac4
         'W' => 
         array (
             'Webmozart\\Assert\\' => 17,
+        ),
+        'T' => 
+        array (
+            'TrueBV\\' => 7,
         ),
         'S' => 
         array (
@@ -56,9 +65,18 @@ class ComposerStaticInite1637ab6dec32b4d2affb62b9e48fac4
         array (
             'Psr\\SimpleCache\\' => 16,
             'Psr\\Log\\' => 8,
+            'Psr\\Http\\Message\\' => 17,
+            'Psr\\Http\\Client\\' => 16,
             'Psr\\EventDispatcher\\' => 20,
             'Psr\\Container\\' => 14,
             'ParseCsv\\' => 9,
+        ),
+        'L' => 
+        array (
+            'LayerShifter\\TLDSupport\\' => 24,
+            'LayerShifter\\TLDExtract\\' => 24,
+            'LayerShifter\\TLDDatabase\\' => 25,
+            'Laravel\\Envoy\\' => 14,
         ),
         'I' => 
         array (
@@ -68,6 +86,12 @@ class ComposerStaticInite1637ab6dec32b4d2affb62b9e48fac4
             'Illuminate\\Container\\' => 21,
             'Illuminate\\Console\\' => 19,
             'Illuminate\\Config\\' => 18,
+        ),
+        'G' => 
+        array (
+            'GuzzleHttp\\Psr7\\' => 16,
+            'GuzzleHttp\\Promise\\' => 19,
+            'GuzzleHttp\\' => 11,
         ),
         'D' => 
         array (
@@ -87,6 +111,10 @@ class ComposerStaticInite1637ab6dec32b4d2affb62b9e48fac4
         'Webmozart\\Assert\\' => 
         array (
             0 => __DIR__ . '/..' . '/webmozart/assert/src',
+        ),
+        'TrueBV\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/true/punycode/src',
         ),
         'Symfony\\Polyfill\\Php80\\' => 
         array (
@@ -164,6 +192,14 @@ class ComposerStaticInite1637ab6dec32b4d2affb62b9e48fac4
         array (
             0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
         ),
+        'Psr\\Http\\Message\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/http-message/src',
+        ),
+        'Psr\\Http\\Client\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/http-client/src',
+        ),
         'Psr\\EventDispatcher\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/event-dispatcher/src',
@@ -175,6 +211,22 @@ class ComposerStaticInite1637ab6dec32b4d2affb62b9e48fac4
         'ParseCsv\\' => 
         array (
             0 => __DIR__ . '/..' . '/parsecsv/php-parsecsv/src',
+        ),
+        'LayerShifter\\TLDSupport\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/layershifter/tld-support/src',
+        ),
+        'LayerShifter\\TLDExtract\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/layershifter/tld-extract/src',
+        ),
+        'LayerShifter\\TLDDatabase\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/layershifter/tld-database/src',
+        ),
+        'Laravel\\Envoy\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/laravel/envoy/src',
         ),
         'Illuminate\\Support\\' => 
         array (
@@ -199,6 +251,18 @@ class ComposerStaticInite1637ab6dec32b4d2affb62b9e48fac4
         'Illuminate\\Config\\' => 
         array (
             0 => __DIR__ . '/..' . '/illuminate/config',
+        ),
+        'GuzzleHttp\\Psr7\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/guzzlehttp/psr7/src',
+        ),
+        'GuzzleHttp\\Promise\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/guzzlehttp/promises/src',
+        ),
+        'GuzzleHttp\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/guzzlehttp/guzzle/src',
         ),
         'Doctrine\\Inflector\\' => 
         array (
@@ -251,6 +315,7 @@ class ComposerStaticInite1637ab6dec32b4d2affb62b9e48fac4
         'FightTheIce\\Console\\Events\\Output\\Warning' => __DIR__ . '/..' . '/fighttheice/console/src/Events/Output/Warning.php',
         'FightTheIce\\Console\\Events\\Terminate' => __DIR__ . '/..' . '/fighttheice/console/src/Events/Terminate.php',
         'FightTheIce\\Console\\TextParser' => __DIR__ . '/..' . '/fighttheice/console/src/TextParser.php',
+        'FightTheIce\\Domain\\Parser' => __DIR__ . '/..' . '/fighttheice/domain-parser/src/Parser.php',
         'JsonException' => __DIR__ . '/..' . '/symfony/polyfill-php73/Resources/stubs/JsonException.php',
         'Klear\\Commands\\Hello\\World' => __DIR__ . '/../..' . '/src/commands/Hello/World.php',
         'Klear\\Libraries\\Console' => __DIR__ . '/../..' . '/src/libraries/Console.php',

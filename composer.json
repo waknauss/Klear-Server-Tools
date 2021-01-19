@@ -6,7 +6,9 @@
         "parsecsv/php-parsecsv": "^1.2",
         "symfony/finder": "^5.2",
         "symfony/process": "^5.2",
-        "illuminate/config": "^7.4"
+        "illuminate/config": "^7.4",
+        "fighttheice/domain-parser": "^1.0",
+        "laravel/envoy": "^2.5"
     },
     "license": "proprietary",
     "authors": [

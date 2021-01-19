@@ -29,7 +29,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '2bcdc7b28fba77aacd7d37735bf299292d0f46c0',
+    'reference' => '20109e1e57e89fd8f30a1cc5858f3f64e0ac4094',
     'name' => 'kleardigital/server-tools',
   ),
   'versions' => 
@@ -51,6 +51,42 @@ private static $installed = array (
       array (
       ),
       'reference' => '16640b5d9ec850e40fb6a9d7f97bcdee832d1da0',
+    ),
+    'fighttheice/domain-parser' => 
+    array (
+      'pretty_version' => '1.0.1',
+      'version' => '1.0.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'efbae5dad5438014834f4529bcc54244b5080c84',
+    ),
+    'guzzlehttp/guzzle' => 
+    array (
+      'pretty_version' => '7.2.0',
+      'version' => '7.2.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '0aa74dfb41ae110835923ef10a9d803a22d50e79',
+    ),
+    'guzzlehttp/promises' => 
+    array (
+      'pretty_version' => '1.4.0',
+      'version' => '1.4.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '60d379c243457e073cff02bc323a2a86cb355631',
+    ),
+    'guzzlehttp/psr7' => 
+    array (
+      'pretty_version' => '1.7.0',
+      'version' => '1.7.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '53330f47520498c0ae1f61f7e2c90f55690c06a3',
     ),
     'illuminate/config' => 
     array (
@@ -113,7 +149,43 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '2bcdc7b28fba77aacd7d37735bf299292d0f46c0',
+      'reference' => '20109e1e57e89fd8f30a1cc5858f3f64e0ac4094',
+    ),
+    'laravel/envoy' => 
+    array (
+      'pretty_version' => 'v2.5.0',
+      'version' => '2.5.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '75cf048ed97e2e04622e51e703a065e7720ce729',
+    ),
+    'layershifter/tld-database' => 
+    array (
+      'pretty_version' => '1.0.69',
+      'version' => '1.0.69.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '7423c7acdc5147268fb856f532a5d8875f6fe41e',
+    ),
+    'layershifter/tld-extract' => 
+    array (
+      'pretty_version' => '1.2.7',
+      'version' => '1.2.7.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '913f82f3d84d314350095aac9dab46df2fa3555d',
+    ),
+    'layershifter/tld-support' => 
+    array (
+      'pretty_version' => '1.1.1',
+      'version' => '1.1.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '9b9eb2350db82239289f4e6eb250a2fe4865b0db',
     ),
     'nesbot/carbon' => 
     array (
@@ -174,6 +246,38 @@ private static $installed = array (
         0 => '1.0',
       ),
     ),
+    'psr/http-client' => 
+    array (
+      'pretty_version' => '1.0.1',
+      'version' => '1.0.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '2dfb5f6c5eff0e91e20e913f8c5452ed95b86621',
+    ),
+    'psr/http-client-implementation' => 
+    array (
+      'provided' => 
+      array (
+        0 => '1.0',
+      ),
+    ),
+    'psr/http-message' => 
+    array (
+      'pretty_version' => '1.0.1',
+      'version' => '1.0.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'f6561bf28d520154e4b0ec72be95418abe6d9363',
+    ),
+    'psr/http-message-implementation' => 
+    array (
+      'provided' => 
+      array (
+        0 => '1.0',
+      ),
+    ),
     'psr/log' => 
     array (
       'pretty_version' => '1.1.3',
@@ -198,6 +302,15 @@ private static $installed = array (
       array (
       ),
       'reference' => '408d5eafb83c57f6365a3ca330ff23aa4a5fa39b',
+    ),
+    'ralouphie/getallheaders' => 
+    array (
+      'pretty_version' => '3.0.3',
+      'version' => '3.0.3.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '120b605dfeb996808c31b6477290a714d356e822',
     ),
     'ramsey/uuid' => 
     array (
@@ -381,6 +494,15 @@ private static $installed = array (
       array (
         0 => '2.0',
       ),
+    ),
+    'true/punycode' => 
+    array (
+      'pretty_version' => 'v2.1.1',
+      'version' => '2.1.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'a4d0c11a36dd7f4e7cd7096076cab6d3378a071e',
     ),
     'voku/portable-ascii' => 
     array (

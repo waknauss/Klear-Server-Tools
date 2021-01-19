@@ -46,6 +46,7 @@ return array(
     'FightTheIce\\Console\\Events\\Output\\Warning' => $vendorDir . '/fighttheice/console/src/Events/Output/Warning.php',
     'FightTheIce\\Console\\Events\\Terminate' => $vendorDir . '/fighttheice/console/src/Events/Terminate.php',
     'FightTheIce\\Console\\TextParser' => $vendorDir . '/fighttheice/console/src/TextParser.php',
+    'FightTheIce\\Domain\\Parser' => $vendorDir . '/fighttheice/domain-parser/src/Parser.php',
     'JsonException' => $vendorDir . '/symfony/polyfill-php73/Resources/stubs/JsonException.php',
     'Klear\\Commands\\Hello\\World' => $baseDir . '/src/commands/Hello/World.php',
     'Klear\\Libraries\\Console' => $baseDir . '/src/libraries/Console.php',

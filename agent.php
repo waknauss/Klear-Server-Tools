@@ -20,6 +20,14 @@ if (!in_array($system['type'],array('development','frontend','webserver','sql'))
     die('Defined system type invalid!');
 }
 
+if (!isset($_SERVER['USER'])) {
+    die('Missing user env!');
+}
+
+if ($_SERVER['USER']!='root') {
+    die('Program must be run with sudo permissions, did you forget sudo php agent.php?');
+}
+
 $console = new FightTheIce\Console\Application('Klear Server Tools','1.0');
 
 //get the container
