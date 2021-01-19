@@ -91,15 +91,7 @@ class CreateUser extends Command {
         $command = str_replace('{USERNAME}',$username,$command);
         $command = str_replace('{n}','\n',$command);
 
-        $process = Process::fromShellCommandline($command);
-        $process->run();
-
-        if (!$process->isSuccessful()) {
-            $exception = new ProcessFailedException($process);
-            $this->error($exception->getMessage());
-            return -2;
-        }
-        
-        $this->comment($process->getOutput());
+        $output = shell_exec($command);
+        $this->comment($output);
 	}
 }
