@@ -53,5 +53,6 @@ new Klear\Libraries\Console($console);
 $console->resolve('Klear\Commands\Hello\World');
 
 $console->resolve('Klear\Commands\Webserver\CreateUser');
+$console->resolve('Klear\Commands\Webserver\GenerateSSL');
 
 $console->run();
