@@ -3,6 +3,7 @@
 namespace Klear\Libraries;
 
 use FightTheIce\Console\Application as FConsole;
+use Symfony\Component\Process\Process;
 
 class Console {
     protected $app = null;
@@ -127,5 +128,9 @@ class Console {
                 file_put_contents($logPath,print_r($data,true).PHP_EOL,FILE_APPEND);
             }
         });
+    }
+
+    public function new_process($command) {
+        return new Process([$command]);
     }
 }

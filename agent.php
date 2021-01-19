@@ -36,6 +36,11 @@ $container = $console->getContainer();
 //setup the config
 $config = new Illuminate\Config\Repository(json_decode(file_get_contents('config.json'),true));
 $container->instance('config',$config);
+$container->singleton('system', function() {
+    $system = json_decode(file_get_contents('system.json'),true);
+
+    return $system['type'];
+});
 
 //alias some of our core libraries in the container with the names Laravel would use
 $container->instance('events',$console->getEvents());
@@ -46,5 +51,7 @@ $container->instance('app',$container);
 new Klear\Libraries\Console($console);
 
 $console->resolve('Klear\Commands\Hello\World');
+
+$console->resolve('Klear\Commands\Backend\CreateUser');
 
 $console->run();

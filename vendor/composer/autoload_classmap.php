@@ -48,6 +48,7 @@ return array(
     'FightTheIce\\Console\\TextParser' => $vendorDir . '/fighttheice/console/src/TextParser.php',
     'FightTheIce\\Domain\\Parser' => $vendorDir . '/fighttheice/domain-parser/src/Parser.php',
     'JsonException' => $vendorDir . '/symfony/polyfill-php73/Resources/stubs/JsonException.php',
+    'Klear\\Commands\\Backend\\CreateUser' => $baseDir . '/src/commands/Backend/CreateUser.php',
     'Klear\\Commands\\Hello\\World' => $baseDir . '/src/commands/Hello/World.php',
     'Klear\\Libraries\\Console' => $baseDir . '/src/libraries/Console.php',
     'Normalizer' => $vendorDir . '/symfony/polyfill-intl-normalizer/Resources/stubs/Normalizer.php',

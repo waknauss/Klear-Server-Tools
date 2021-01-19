@@ -1,3 +1,7 @@
 {
-    
+    "commands": {
+        "system": {
+            "create-user": "useradd -m {USERNAME}"
+        }
+    }
 }
