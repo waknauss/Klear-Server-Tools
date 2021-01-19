@@ -10,7 +10,16 @@ class CreateUser extends Command {
 	protected $signature = 'backend:createuser {username? : System Username}';
 	protected $description = 'Create a backend user';
 	protected $hidden = false;
-	protected $enabled = true;
+    protected $enabled = true;
+    
+    public function isEnabled() {
+        $system = $this->getContainer()->make('system');
+        if ($system=='webserver') {
+            return true;
+        }
+
+        return false;
+    }
 
 	public function handle() {
         $username = $this->argument('username');
@@ -46,5 +55,14 @@ class CreateUser extends Command {
         }
         
         $this->comment($process->getOutput());
+
+        foreach (array(
+            'public',
+            'tmp',
+            'logs',
+            'ssl'
+        ) as $folder) {
+            mkdir('/home/'.$username.'/'.$folder);
+        }
 	}
 }
