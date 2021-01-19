@@ -47,6 +47,7 @@ return array(
     'FightTheIce\\Console\\Events\\Terminate' => $vendorDir . '/fighttheice/console/src/Events/Terminate.php',
     'FightTheIce\\Console\\TextParser' => $vendorDir . '/fighttheice/console/src/TextParser.php',
     'JsonException' => $vendorDir . '/symfony/polyfill-php73/Resources/stubs/JsonException.php',
+    'Klear\\Commands\\Hello\\World' => $baseDir . '/src/commands/Hello/World.php',
     'Normalizer' => $vendorDir . '/symfony/polyfill-intl-normalizer/Resources/stubs/Normalizer.php',
     'Stringable' => $vendorDir . '/symfony/polyfill-php80/Resources/stubs/Stringable.php',
     'UnhandledMatchError' => $vendorDir . '/symfony/polyfill-php80/Resources/stubs/UnhandledMatchError.php',

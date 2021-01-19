@@ -14,5 +14,8 @@
             "name": "William Knauss",
             "email": "william.knauss@kingdom.com"
         }
-    ]
+    ],
+    "autoload": {
+        "classmap": ["src"]
+    }
 }
